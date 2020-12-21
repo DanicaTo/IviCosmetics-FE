@@ -871,202 +871,21 @@ let mainBlogbtn=document.getElementById("seeAllPosts")
 showBlog(navBlog)
 showBlog(mainBlogbtn)
 
-let storeMainBtn=document.getElementsByClassName("hero-btn")
+let storeMainBtn=document.getElementsByClassName("storeClass")
 
- console.log(storeMainBtn.length)
+ 
+console.log(storeMainBtn)
 
+
+for(let i=0;i<=storeMainBtn.length;i++){
+
+	showStore(storeMainBtn[i])
+}
  //////////////////////////////////////////////////////////// STORE PAGE 2 ///////////////////////////////////////////////////////////
 // SHowing the Store from the Main Butons
- for(let i=0;i<storeMainBtn.length-2;i++){
-
-	storeMainBtn[i].addEventListener(`click`,function(){
-	
 
 	
-			let output=document.getElementById("output")
 	
-			output.innerHTML=` <div class="container-fluid" id="store">
-			<div class="row">
-				<div class="col-md-4 store-product-one ">
-					<div class="img-container"><img src="img/store_product1.jpg" class="img-fluid product-img" alt=""><div class="middle"><div class="text-img">CLICK ON IMAGE TO SEE MORE</div></div></div>
-					<h4 class="title-product"style="font-weight:bold">Wax depilator 100g</h4>
-					<div><p>Ingredients: Rosin, pine resin, bee resin, herbal ointment, boric oil, castor etc…</p></div>
-					<div class="store-btn"><button id="addToCart" type="button" class="btn btn-outline hero-btn" style= "color:#333;">Add to cart</button></div>
-				</div>
-				<div class="col-md-4 store-product-one ">
-					<div class="img-container"><img src="img/store_product2.jpg" class="img-fluid product-img" alt=""><div class="middle"><div class="text-img">CLICK ON IMAGE TO SEE MORE</div></div></div>
-					<h4 class="title-product"style="font-weight:bold">Wax depilator 100g</h4>
-					<div><p>Ingredients: Rosin, pine resin, bee resin, herbal ointment, boric oil, castor etc…</p></div>
-					<div class="store-btn"><button id="addToCart" type="button" class="btn btn-outline hero-btn" style= "color:#333;">Add to cart</button></div>
-				</div>
-				<div class="col-md-4 store-product-one ">
-					<div class="img-container"><img src="img/store_product3.jpg" class="img-fluid product-img" alt=""><div class="middle"><div class="text-img">CLICK ON IMAGE TO SEE MORE</div></div></div>
-					<h4 class="title-product"style="font-weight:bold">Wax depilator 100g</h4>
-					<div><p>Ingredients: Rosin, pine resin, bee resin, herbal ointment, boric oil, castor etc…</p></div>
-					<div class="store-btn"><button id="addToCart" type="button" class="btn btn-outline hero-btn" style= "color:#333;">Add to cart</button></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 store-product-one ">
-					<div class="img-container"><img src="img/store_product4.jpg" class="img-fluid product-img" alt=""><div class="middle"><div class="text-img">CLICK ON IMAGE TO SEE MORE</div></div></div>
-					<h4 class="title-product"style="font-weight:bold">Wax depilator 100g</h4>
-					<div><p>Ingredients: Rosin, pine resin, bee resin, herbal ointment, boric oil, castor etc…</p></div>
-					<div class="store-btn"><button id="addToCart" type="button" class="btn btn-outline hero-btn" style= "color:#333;">Add to cart</button></div>
-				</div>
-				<div class="col-md-4 store-product-one ">
-					<div class="img-container"><img src="img/store_product5.jpg" class="img-fluid product-img" alt=""><div class="middle"><div class="text-img">CLICK ON IMAGE TO SEE MORE</div></div></div>
-					<h4 class="title-product"style="font-weight:bold">Wax depilator 100g</h4>
-					<div><p>Ingredients: Rosin, pine resin, bee resin, herbal ointment, boric oil, castor etc…</p></div>
-					<div class="store-btn"><button id="addToCart" type="button" class="btn btn-outline hero-btn" style= "color:#333;">Add to cart</button></div>
-				</div>
-				<div class="col-md-4 store-product-one ">
-					<div class="img-container"><img src="img/store_product6.jpg" class="img-fluid product-img" alt=""><div class="middle"><div class="text-img">CLICK ON IMAGE TO SEE MORE</div></div></div>
-					<h4 class="title-product"style="font-weight:bold">Wax depilator 100g</h4>
-					<div><p>Ingredients: Rosin, pine resin, bee resin, herbal ointment, boric oil, castor etc…</p></div>
-					<div class="store-btn"><button id="addToCart" type="button" class="btn btn-outline hero-btn" style= "color:#333;">Add to cart</button></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 store-product-one ">
-					<div class="img-container"><img src="img/store_product7.jpg" class="img-fluid product-img" alt=""><div class="middle"><div class="text-img">CLICK ON IMAGE TO SEE MORE</div></div></div>
-					<h4 class="title-product"style="font-weight:bold">Wax depilator 100g</h4>
-					<div><p>Ingredients: Rosin, pine resin, bee resin, herbal ointment, boric oil, castor etc…</p></div>
-					<div class="store-btn"><button id="addToCart" type="button" class="btn btn-outline hero-btn" style= "color:#333;">Add to cart</button></div>
-				</div>
-				<div class="col-md-4 store-product-one ">
-					<div class="img-container"><img src="img/store_product8.jpg" class="img-fluid product-img" alt=""><div class="middle"><div class="text-img">CLICK ON IMAGE TO SEE MORE</div></div></div>
-					<h4 class="title-product"style="font-weight:bold">Wax depilator 100g</h4>
-					<div><p>Ingredients: Rosin, pine resin, bee resin, herbal ointment, boric oil, castor etc…</p></div>
-					<div class="store-btn"><button id="addToCart" type="button" class="btn btn-outline hero-btn" style= "color:#333;">Add to cart</button></div>
-				</div>
-				<div class="col-md-4 store-product-one ">
-					<div class="img-container"><img src="img/store_product9.jpg" class="img-fluid product-img" alt=""><div class="middle"><div class="text-img">CLICK ON IMAGE TO SEE MORE</div></div></div>
-					<h4 class="title-product"style="font-weight:bold">Wax depilator 100g</h4>
-					<div><p>Ingredients: Rosin, pine resin, bee resin, herbal ointment, boric oil, castor etc…</p></div>
-					<div class="store-btn"><button id="addToCart" type="button" class="btn btn-outline hero-btn" style= "color:#333;">Add to cart</button></div>
-				</div>
-			</div>
-		</div>
-			
-		`
-	
-		//Making the Counter go Up with each click on add to Cart.
-			let seeMorebtn=document.getElementsByClassName("addtoCart")
-	
-	
-			for(let i=0;i<seeMorebtn.length;i++){
-			seeMorebtn[i].addEventListener(`click`,function(){
-				let addtoCartNumber=document.getElementById("cart-products")
-	
-				value++
-	
-				addtoCartNumber.innerText=value
-				alert("Product Added to Cart")
-	
-				addtoCartNumber.style.color="red"
-				addtoCartNumber.style.fontSize="1.2em"
-			})}
-		
-		
-		let clickImages=document.getElementsByClassName("image-extra")
-	
-		//////////////////////////////////////////////// STORE PAGE 3 ///////////////////////////////////////////////////////////////////
-		//Making a loop so that we can add the event listener for each elemept in order to take us to the one Product page. This function will change when we will have to make an Ajax Call.
-			for(let i=0;i<clickImages.length;i++){
-	
-				clickImages[i].addEventListener(`click`,function(){
-	
-					output.innerHTML=` <div class="container-fluid" id="store">
-					<div class="row">
-						<div class="col-md-4 store-product-one ">
-							<div class="img-container"><img src="img/store_product1.jpg" class="img-fluid product-img" alt=""><div class="middle"><div class="text-img">CLICK ON IMAGE TO SEE MORE</div></div></div>
-							<h4 class="title-product"style="font-weight:bold">Wax depilator 100g</h4>
-							<div><p>Ingredients: Rosin, pine resin, bee resin, herbal ointment, boric oil, castor etc…</p></div>
-							<div class="store-btn"><button id="addToCart" type="button" class="btn btn-outline hero-btn" style= "color:#333;">Add to cart</button></div>
-						</div>
-						<div class="col-md-4 store-product-one ">
-							<div class="img-container"><img src="img/store_product2.jpg" class="img-fluid product-img" alt=""><div class="middle"><div class="text-img">CLICK ON IMAGE TO SEE MORE</div></div></div>
-							<h4 class="title-product"style="font-weight:bold">Wax depilator 100g</h4>
-							<div><p>Ingredients: Rosin, pine resin, bee resin, herbal ointment, boric oil, castor etc…</p></div>
-							<div class="store-btn"><button id="addToCart" type="button" class="btn btn-outline hero-btn" style= "color:#333;">Add to cart</button></div>
-						</div>
-						<div class="col-md-4 store-product-one ">
-							<div class="img-container"><img src="img/store_product3.jpg" class="img-fluid product-img" alt=""><div class="middle"><div class="text-img">CLICK ON IMAGE TO SEE MORE</div></div></div>
-							<h4 class="title-product"style="font-weight:bold">Wax depilator 100g</h4>
-							<div><p>Ingredients: Rosin, pine resin, bee resin, herbal ointment, boric oil, castor etc…</p></div>
-							<div class="store-btn"><button id="addToCart" type="button" class="btn btn-outline hero-btn" style= "color:#333;">Add to cart</button></div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 store-product-one ">
-							<div class="img-container"><img src="img/store_product4.jpg" class="img-fluid product-img" alt=""><div class="middle"><div class="text-img">CLICK ON IMAGE TO SEE MORE</div></div></div>
-							<h4 class="title-product"style="font-weight:bold">Wax depilator 100g</h4>
-							<div><p>Ingredients: Rosin, pine resin, bee resin, herbal ointment, boric oil, castor etc…</p></div>
-							<div class="store-btn"><button id="addToCart" type="button" class="btn btn-outline hero-btn" style= "color:#333;">Add to cart</button></div>
-						</div>
-						<div class="col-md-4 store-product-one ">
-							<div class="img-container"><img src="img/store_product5.jpg" class="img-fluid product-img" alt=""><div class="middle"><div class="text-img">CLICK ON IMAGE TO SEE MORE</div></div></div>
-							<h4 class="title-product"style="font-weight:bold">Wax depilator 100g</h4>
-							<div><p>Ingredients: Rosin, pine resin, bee resin, herbal ointment, boric oil, castor etc…</p></div>
-							<div class="store-btn"><button id="addToCart" type="button" class="btn btn-outline hero-btn" style= "color:#333;">Add to cart</button></div>
-						</div>
-						<div class="col-md-4 store-product-one ">
-							<div class="img-container"><img src="img/store_product6.jpg" class="img-fluid product-img" alt=""><div class="middle"><div class="text-img">CLICK ON IMAGE TO SEE MORE</div></div></div>
-							<h4 class="title-product"style="font-weight:bold">Wax depilator 100g</h4>
-							<div><p>Ingredients: Rosin, pine resin, bee resin, herbal ointment, boric oil, castor etc…</p></div>
-							<div class="store-btn"><button id="addToCart" type="button" class="btn btn-outline hero-btn" style= "color:#333;">Add to cart</button></div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 store-product-one ">
-							<div class="img-container"><img src="img/store_product7.jpg" class="img-fluid product-img" alt=""><div class="middle"><div class="text-img">CLICK ON IMAGE TO SEE MORE</div></div></div>
-							<h4 class="title-product"style="font-weight:bold">Wax depilator 100g</h4>
-							<div><p>Ingredients: Rosin, pine resin, bee resin, herbal ointment, boric oil, castor etc…</p></div>
-							<div class="store-btn"><button id="addToCart" type="button" class="btn btn-outline hero-btn" style= "color:#333;">Add to cart</button></div>
-						</div>
-						<div class="col-md-4 store-product-one ">
-							<div class="img-container"><img src="img/store_product8.jpg" class="img-fluid product-img" alt=""><div class="middle"><div class="text-img">CLICK ON IMAGE TO SEE MORE</div></div></div>
-							<h4 class="title-product"style="font-weight:bold">Wax depilator 100g</h4>
-							<div><p>Ingredients: Rosin, pine resin, bee resin, herbal ointment, boric oil, castor etc…</p></div>
-							<div class="store-btn"><button id="addToCart" type="button" class="btn btn-outline hero-btn" style= "color:#333;">Add to cart</button></div>
-						</div>
-						<div class="col-md-4 store-product-one ">
-							<div class="img-container"><img src="img/store_product9.jpg" class="img-fluid product-img" alt=""><div class="middle"><div class="text-img">CLICK ON IMAGE TO SEE MORE</div></div></div>
-							<h4 class="title-product"style="font-weight:bold">Wax depilator 100g</h4>
-							<div><p>Ingredients: Rosin, pine resin, bee resin, herbal ointment, boric oil, castor etc…</p></div>
-							<div class="store-btn"><button id="addToCart" type="button" class="btn btn-outline hero-btn" style= "color:#333;">Add to cart</button></div>
-						</div>
-					</div>
-				</div>
-					
-				`
-	
-				//Incrementing the Products number in the CartElement in Singe Product Page
-				var addtoCartbtnSinglePage=document.getElementById("addtoCartSingePage")
-				
-				addtoCartbtnSinglePage.addEventListener(`click`,function(){
-						let addtoCartNumber=document.getElementById("cart-products")
-			
-						value++
-			
-						addtoCartNumber.innerText=value
-						alert("Product Added to Cart")
-			
-						addtoCartNumber.style.color="red"
-						addtoCartNumber.style.fontSize="1.2em"
-						scroll(0,0)
-					
-					})
-				})
-	
-			}
-	
-		})
-		
-	
-	
-	}
-		
 
 	
 
