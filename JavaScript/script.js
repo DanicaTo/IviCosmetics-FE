@@ -320,7 +320,7 @@ function showStore(link){
 						   <div class="col-md-3  col-6 grey-background"><a href="#"><img src="img/product3.jpg" class="d-block w-100" alt="product image"></a>
 								 <h5 class="caption">Wax depilator</h5>
 							  </div>
-						   <div class="col-md-3  col-6 grey-background"><a href="#"><img src="img/store_product5.jpg" class="d-block w-100" alt="product image"></a>
+						   <div class="col-md-3  col-6 grey-background"><a href="#"><img src="img/store_product4.jpg" class="d-block w-100" alt="product image"></a>
 								 <h5 class="caption">Wax depilator</h5>
 						   </div>
 						 </div>
