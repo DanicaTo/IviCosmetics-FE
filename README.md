@@ -1,7 +1,7 @@
 # IviCosmetics
 
 ## Website live URL
-[](https://sedc-codecademy.github.io/sp2020-cp07-cos/)
+This site was built using [GitHub Pages](https://sedc-codecademy.github.io/sp2020-cp07-cos/).
 
 ## About the project :bee: 
 The project was assigned to the team of students from SEDC, in order to teach students to build real-life projects from zero. The design of this website was also made from scratch, following the requirements from the client. 
